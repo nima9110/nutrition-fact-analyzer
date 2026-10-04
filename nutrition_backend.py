@@ -2,7 +2,7 @@ import re
 import pandas as pd
 import numpy as np
 
-df = pd.read_csv('/content/cleaned_nutrition_dataset.csv')
+df = pd.read_csv('cleaned_nutrition_dataset.csv')
 
 sugar_low = df['sugar'].quantile(0.33)
 sugar_high = df['sugar'].quantile(0.66)
